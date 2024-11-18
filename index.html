@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" name="contact-form" enctype="multipart/form-data">
+        <h4>Надіслати виконане завдання</h4>
+        <label for="name">Прізвище та ім'я</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Прізвище та ім'я"
+          ref="reference"
+        />
+        <label for="class">Клас</label>
+        <input type="text" name="class" placeholder="Клас" required />
+        <label for="number">Номер завдання</label>
+        <input
+          id="taskInput"
+          type="text"
+          name="number"
+          placeholder="Номер завдання"
+          required
+        />
+        <label for="url">Посилання на виконане завдання</label>
+        <input
+          type="text"
+          name="url"
+          placeholder="Посилання на виконане завдання"
+        />
+        <label for="message">Відповідь</label>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Відповідь"
+          required
+        ></textarea>
+
+        <button type="submit" id="submit">Надіслати</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
